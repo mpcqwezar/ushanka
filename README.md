@@ -13,20 +13,6 @@
 
 ## Запуск
 
-```bash
-npm install
-npm run dev
-```
-
-## Сборка и GitHub Pages
-
-```bash
-npm run build
-```
-
-В `vite.config.js` задан `base: '/ushanka/'` под репозиторий `ushanka`.
-После пуша в GitHub включите Pages (ветка `gh-pages` или GitHub Actions) — сайт будет на:
-
 `https://<username>.github.io/ushanka/`
 
 ## Стек
