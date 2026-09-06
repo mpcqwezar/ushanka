@@ -1,0 +1,213 @@
+.game-results {
+  background: var(--bg-surface);
+  border-radius: 18px;
+  padding: 1.25rem;
+  box-shadow: var(--shadow);
+}
+
+.results-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.winner-section {
+  text-align: center;
+}
+
+.winner-section h2 {
+  color: var(--warning);
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.winner-card {
+  background: linear-gradient(145deg, #f5576c 0%, #f093fb 100%);
+  padding: 1.5rem;
+  border-radius: 16px;
+  color: #fff;
+}
+
+.winner-title {
+  margin: 0 0 0.35rem;
+  font-size: 1rem;
+  opacity: 0.95;
+}
+
+.winner-name {
+  margin: 0 0 0.35rem;
+  font-size: clamp(1.8rem, 8vw, 2.4rem);
+  font-weight: 800;
+}
+
+.winner-score {
+  margin: 0;
+  font-size: 1.1rem;
+  opacity: 0.95;
+}
+
+.final-standings {
+  background: var(--bg-standings);
+  padding: 1.25rem;
+  border-radius: 14px;
+}
+
+.final-standings h3 {
+  color: var(--accent);
+  margin-bottom: 0.75rem;
+  text-align: center;
+}
+
+.standings-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.standing-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.85rem;
+  background: var(--bg-surface);
+  border-radius: 10px;
+  border-left: 4px solid var(--accent);
+}
+
+.medal {
+  font-size: 1.25rem;
+  min-width: 1.5rem;
+}
+
+.rank {
+  color: var(--text-faint);
+  font-weight: 700;
+  min-width: 2rem;
+}
+
+.standing-item .name {
+  flex: 1;
+  font-weight: 600;
+}
+
+.standing-item .score {
+  font-weight: 800;
+  color: var(--accent);
+  font-size: 1.15rem;
+}
+
+.game-statistics {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+}
+
+.stat-card {
+  background: linear-gradient(135deg, #5b6ee1 0%, #7b3fa0 100%);
+  padding: 1rem;
+  border-radius: 12px;
+  color: #fff;
+  text-align: center;
+}
+
+.stat-card h4 {
+  margin: 0 0 0.35rem;
+  font-size: 0.85rem;
+  opacity: 0.9;
+}
+
+.stat-number {
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 800;
+}
+
+.remaining-words {
+  background: var(--bg-remaining);
+  padding: 1.1rem;
+  border-radius: 12px;
+  border-left: 4px solid var(--border-remaining);
+}
+
+.remaining-words h3 {
+  color: var(--warning-text);
+  margin-bottom: 0.75rem;
+  font-size: 1.05rem;
+}
+
+.words-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.word-badge {
+  display: inline-block;
+  padding: 0.4rem 0.75rem;
+  background: var(--bg-surface);
+  border: 2px solid var(--border-remaining);
+  border-radius: 999px;
+  color: var(--warning-text);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.guessed-summary {
+  background: var(--bg-guessed-block);
+  padding: 1.1rem;
+  border-radius: 12px;
+  border-left: 4px solid var(--success);
+}
+
+.guessed-summary h3 {
+  color: var(--success-text);
+  margin-bottom: 0.75rem;
+  font-size: 1.05rem;
+}
+
+.guessed-table {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.guessed-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  padding: 0.65rem 0.75rem;
+  background: var(--bg-surface);
+  border-radius: 8px;
+}
+
+.guessed-row .word {
+  font-weight: 700;
+  color: var(--text-main);
+  font-size: 1rem;
+}
+
+.guessed-row .by-player {
+  color: var(--success-text);
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.results-actions {
+  display: flex;
+}
+
+.play-again-btn {
+  width: 100%;
+  padding: 1.05rem;
+  font-size: 1.15rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #5b6ee1 0%, #7b3fa0 100%);
+  color: #fff;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+}
+
+.play-again-btn:active {
+  transform: scale(0.98);
+}
